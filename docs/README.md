@@ -13,3 +13,14 @@ N = int(input())
 # 5 6 8 10
 A = list(map(int, input().split()))
 ```
+
+### 複数行に渡る入力をリストに
+
+```py
+# H  WW
+# S1
+# ...
+# SH
+H, W = map(int, input().split())
+S = [input() for _ in range(H)]
+```
