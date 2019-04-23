@@ -9,3 +9,7 @@ AtCoder : https://atcoder.jp/
 
 ## Reference
 * [2018-09-14 Python3で競技プログラミングする時に知っておきたいtips（入力編）](https://qiita.com/kyuna/items/8ee8916c2f4e36321a1c)
+
+## Learned 
+* 尺取り法
+* 累積和
