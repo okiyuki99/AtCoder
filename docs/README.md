@@ -24,3 +24,19 @@ A = list(map(int, input().split()))
 H, W = map(int, input().split())
 S = [input() for _ in range(H)]
 ```
+
+## str
+
+```py
+>>> s = 'abcdefg'
+>>> s[0:2]
+'ab'
+>>> s[0:2 + 4]
+'abcdef'
+>>> s[0:2 + 2]
+'abcd'
+>>> s[:2]
+'ab'
+>>> s[:2] + 'xyz' + s[3:]
+'abxyzdefg'
+```
