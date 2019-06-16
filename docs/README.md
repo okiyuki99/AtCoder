@@ -35,6 +35,7 @@ input = sys.stdin.readline
 a = input()
 b = list(input())
 c = list(input())[:-1]
+# or c = list(input().strip())
 print(a)
 print(b)
 print(c)
