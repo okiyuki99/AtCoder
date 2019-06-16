@@ -13,3 +13,5 @@ AtCoder : https://atcoder.jp/
 ## Learned 
 * 尺取り法
 * 累積和
+* 動的計画法（DP）
+    * 今の状態が次の状態に影響するような問題
