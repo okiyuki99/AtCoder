@@ -103,10 +103,25 @@ abc
 ```py
 for i in range(5, 1, -1):
     print(i)
+---
 5
 4
 3
 2
+```
+
+## X倍のindexを得る
+
+```py
+i = 3
+n = i
+while n <= 10:
+    n += i
+    print(n)
+---    
+6
+9
+12
 ```
 
 ## sort
