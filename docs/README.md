@@ -95,6 +95,20 @@ abc
 ['c', 'b', 'a']
 
 ```
+
+## range
+
+逆向き
+
+```py
+for i in range(5, 1, -1):
+    print(i)
+5
+4
+3
+2
+```
+
 ## sort
 
 ```py
@@ -103,6 +117,8 @@ abc
 SP = sorted(SP, key = lambda x : x[1], reverse=True)
 SP = sorted(SP, key = lambda x : x[0])
 ```
+
+X番目に大きいのを求めるもsortがまずまず速い
 
 ## complexity
 
