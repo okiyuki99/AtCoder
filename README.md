@@ -9,7 +9,9 @@ AtCoder : https://atcoder.jp/
 
 ## Reference
 * [2018-09-14 Python3で競技プログラミングする時に知っておきたいtips（入力編）](https://qiita.com/kyuna/items/8ee8916c2f4e36321a1c)
-
+* [2018-03-18 AtCoderで水色になるまでにやった事とかをまとめる](http://shibh308.hatenablog.com/entry/2018/03/18/074745)
+    * Cまでは30分以内で解くのをいい目標感
+    * Dを解くための武器を増やしていく
 ## Learned 
 * 尺取り法
 * 累積和
