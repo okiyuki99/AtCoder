@@ -136,6 +136,14 @@ if __name__ == '__main__':
 [(1, 2), (1, 3), (2, 3)]
 ```
 
+## numpy
+
+### np.argmax - 最大値の場所
+
+```py
+MAI = np.argmax(np.array(A))
+```
+
 ## Tips
 
 * プログラムを終了させるとき ```sys.exit()```
