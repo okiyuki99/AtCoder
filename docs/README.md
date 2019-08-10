@@ -126,14 +126,47 @@ while n <= 10:
 
 ## sort
 
+### 複数のkeyを持ったリストをソートさせる（2番目が大きい順なかで、1番目が大きい順にとか）
+
 ```py
-# どのキーでソートするかを指定することができる
 # 参考 : https://atcoder.jp/contests/abc128/tasks/abc128_b
-SP = sorted(SP, key = lambda x : x[1], reverse=True)
-SP = sorted(SP, key = lambda x : x[0])
+print(AB)
+AB = sorted(AB, key = lambda x : x[0], reverse=True)
+AB = sorted(AB, key = lambda x : x[1], reverse=True)
+print(AB)
+
+>>> [[1, 2], [1, 3], [1, 4], [2, 1], [2, 3]] # 入力はこんなの
+>>> [[1, 4], [2, 3], [1, 3], [1, 2], [2, 1]] # 2番目が大きい順でかつ、同じ値のものは、1番目が大きい順になってる
 ```
 
-X番目に大きいのを求めるもsortがまずまず速い
+### X番目に大きいのを求めるもsortがまずまず速い
+
+### ある文字列のソート
+
+```
+>>> s = 'acbed'
+>>> sorted(s)
+['a', 'b', 'c', 'd', 'e']
+>>> ''.join(sorted(s))
+'abcde'
+```
+
+## dict
+
+### Keyがあるかないか
+
+```py
+D = {}
+if s in D : # Dの中にsというキーがあるかどうか
+  ...
+else : 
+```
+
+### 辞書の値をすべて撮ってくる 
+
+```py
+D.values()
+```
 
 ## complexity
 
@@ -162,9 +195,54 @@ if __name__ == '__main__':
 
 ### combinations - 組み合わせ
 
+#### 組み合わせパターンを得る
 ```py
 >>> list(itertools.combinations([1,2,3],2))
 [(1, 2), (1, 3), (2, 3)]
+```
+
+#### 組み合わせ数が何個あるかを得る
+
+
+```py
+# これで良いらしい
+# https://stackoverflow.com/questions/4941753/is-there-a-math-ncr-function-in-python
+import math
+
+def nCr(n,r):
+    f = math.factorial
+    return f(n) // f(r) // f(n-r)
+
+>>> nCr(4,2)
+```
+
+古いやつ
+```py
+# nCr で nがめちゃくちゃでかい数の場合が多いので、以下を使うらしい
+# 参考 : http://nemupm.hatenablog.com/entry/2015/01/03/234840
+def modc(a, b, m):
+    c = 1
+    for i in range(b):
+        c = c * (a - i) % m
+        c = c * modinv(i + 1, m) % m
+    return c
+
+def egcd(a, b):
+    (x, lastx) = (0, 1)
+    (y, lasty) = (1, 0)
+    while b != 0:
+        q = a // b
+        (a, b) = (b, a % b)
+        (x, lastx) = (lastx - q * x, x)
+        (y, lasty) = (lasty - q * y, y)
+    return (lastx, lasty, a)
+
+def modinv(a, m):
+    (inv, q, gcd_val) = egcd(a, m)
+    return inv % m
+
+>>> modc(6, 2, 2 ** 63 - 1)
+15
 ```
 
 ## numpy
