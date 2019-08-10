@@ -203,20 +203,18 @@ if __name__ == '__main__':
 
 #### 組み合わせ数が何個あるかを得る
 
-
 ```py
 # これで良いらしい
 # https://stackoverflow.com/questions/4941753/is-there-a-math-ncr-function-in-python
 import math
 
 def nCr(n,r):
-    f = math.factorial
+    f = math.factorial # 階乗（e.g., n!）を求める関数
     return f(n) // f(r) // f(n-r)
 
 >>> nCr(4,2)
 ```
 
-古いやつ
 ```py
 # nCr で nがめちゃくちゃでかい数の場合が多いので、以下を使うらしい
 # 参考 : http://nemupm.hatenablog.com/entry/2015/01/03/234840
