@@ -203,6 +203,20 @@ if __name__ == '__main__':
 
 #### 組み合わせ数が何個あるかを得る
 
+abc137_c のように、nC2を求める場合、今何個あるかの情報を使えば、今ある個数分を足していけば、答えは得れる
+
+```
+1c2 0 
+2c2 1
+3c2 3
+4c2 6
+5c2 10
+
+つまり、10 = 6 + 4
+```
+
+何も考えるに求める場合
+
 ```py
 # これで良いらしい
 # https://stackoverflow.com/questions/4941753/is-there-a-math-ncr-function-in-python
@@ -243,6 +257,8 @@ def modinv(a, m):
 15
 ```
 
+
+
 ## numpy
 
 ### np.argmax - 最大値の場所
@@ -255,3 +271,5 @@ MAI = np.argmax(np.array(A))
 
 * プログラムを終了させるとき ```sys.exit()```
 
+## Learned
+* 前向きに数えるよりも、後ろ向きに数えたほうがいいときがある by abc137_d
