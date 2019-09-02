@@ -13,6 +13,9 @@ AtCoder : https://atcoder.jp/
     * Cまでは30分以内で解くのをいい目標感
     * Dを解くための武器を増やしていく
 
+## Tips
+* [docs/](docs/README.md)
+
 ## Learned 
 * 尺取り法
 * 累積和
