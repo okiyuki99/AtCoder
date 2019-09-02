@@ -14,7 +14,7 @@ N = int(input())
 A = list(map(int, input().split()))
 ```
 
-### 複数行に渡る入力をリストに
+### 複数行に渡る整数1つ入力をリストに
 
 ```py
 # H  WW
@@ -23,6 +23,16 @@ A = list(map(int, input().split()))
 # SH
 H, W = map(int, input().split())
 S = [input() for _ in range(H)]
+```
+
+### 複数行に渡る整数複数入力をリストに
+
+```py
+# N
+# T1 T2
+# T3 T4 T5
+# ...
+T = [list(map(int,input().split())) for _ in range(N)]
 ```
 
 ### sys.stdin.readline
