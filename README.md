@@ -25,6 +25,7 @@ AtCoder : https://atcoder.jp/
    * 参考 : [modにおける四則演算](https://ttrsq.exblog.jp/24409121/) 
 * 動的計画法（DP）
     * 今の状態が次の状態に影響するような問題
+* [ダイクストラ法](ex_dijkstra.ipynb)
 
 ## Next step
 * 桁DP ...
