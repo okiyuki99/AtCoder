@@ -28,5 +28,10 @@ AtCoder : https://atcoder.jp/
 * [ダイクストラ法](ex_dijkstra.ipynb)
 * [Union Find Tree](ex_union_find_tree.ipynb)
 
+## Problem pattern
+* X回の操作で、最大で何個にできるでしょうか (ABC140 D)
+    * 一回の操作で増やせる数が実は決まってることがある
+    * 増やせる候補に着目して、問題をシンプル化することが大事
+
 ## Next step
 * 桁DP 
