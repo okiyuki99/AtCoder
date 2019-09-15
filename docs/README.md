@@ -316,11 +316,12 @@ def modinv(a, m):
 MAI = np.argmax(np.array(A))
 ```
 
-### あるリストに同じ値をかけるはnumpyが速い
+### あるリストに同じ値を掛ける(multiply)はnumpyが速い
 
 ```py
-a = [1,2,3]
-list(np.array(a) * -3)
+>>> a = [1,2,3]
+>>> list(np.array(a) * -3)
+[-3, -6, -9]
 ```
 
 ## Tips
