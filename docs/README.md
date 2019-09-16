@@ -326,7 +326,16 @@ MAI = np.argmax(np.array(A))
 
 ## Tips
 
-* プログラムを終了させるとき ```sys.exit()```
+#### プログラムを終了させるとき ```sys.exit()```
+
+#### True / False を 1 / 0 
+
+``` py
+>>> print([0,1][True])
+1
+>>> print([0,1][False])
+0
+```
 
 ## Learned
 * **abc137_d**
