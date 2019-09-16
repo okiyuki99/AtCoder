@@ -87,6 +87,16 @@ abc
 49999999999999993675881847455744
 ```
 
+* ビット演算子
+
+```py
+# 排他的論理和 ^ 
+>>> True ^ False 
+True
+>>> True ^ True
+False
+```
+
 ### math module
 
 ```py
