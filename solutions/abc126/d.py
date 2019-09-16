@@ -1,3 +1,4 @@
+# Ref. https://oneminutepython.com/atcoder/abc126_d.html#%E7%B5%90%E6%9E%9C
 from collections import deque
 
 N = int(input())
