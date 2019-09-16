@@ -12,6 +12,9 @@ N = int(input())
 ```py
 # 5 6 8 10
 A = list(map(int, input().split()))
+
+# -1をかけたものを取得する
+A = list(map(lambda x : int(x) * -1, input().split()))
 ```
 
 ### 複数行に渡る整数1つ入力をリストに
@@ -34,6 +37,8 @@ S = [input() for _ in range(H)]
 # ...
 T = [list(map(int,input().split())) for _ in range(N)]
 ```
+
+### 
 
 ### sys.stdin.readline
 10^5 超える入力なら使ったほうが早い
@@ -62,6 +67,8 @@ abc
 
 ## math
 
+### Basic
+
 ```py
 >>> 321 % 100 # mod = 余り計算
 21
@@ -80,6 +87,21 @@ abc
 49999999999999993675881847455744
 ```
 
+### math module
+
+```py
+import math
+
+print(math.ceil(7.5)) # -> 8 # 切り上げ
+print(math.floor(7.5)) # -> 7 # 切り捨て
+
+print(math.ceil(-7.5)) # -> -7
+print(math.floor(-7.5)) # -> -8
+
+print(math.trunc(7.5)) # -> 7 # 整数部分を取得
+print(math.trunc(-7.5)) # -> -7
+```
+
 ## str
 
 ```py
@@ -94,6 +116,14 @@ abc
 'ab'
 >>> s[:2] + 'xyz' + s[3:]
 'abxyzdefg'
+```
+
+### ある文字が該当する文字列に入ってるかどうか
+
+```py
+'A' in 'ABC' # -> True
+# これはだめ : A' in ['A,'B',C']
+'A' in str(['A','B','C']) # -> True
 ```
 
 ## list
@@ -284,6 +314,14 @@ def modinv(a, m):
 
 ```py
 MAI = np.argmax(np.array(A))
+```
+
+### あるリストに同じ値を掛ける(multiply)はnumpyが速い
+
+```py
+>>> a = [1,2,3]
+>>> list(np.array(a) * -3)
+[-3, -6, -9]
 ```
 
 ## Tips
