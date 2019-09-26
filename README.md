@@ -25,8 +25,9 @@ AtCoder : https://atcoder.jp/
    * 参考 : [modにおける四則演算](https://ttrsq.exblog.jp/24409121/) 
 * 動的計画法（DP）
     * 今の状態が次の状態に影響するような問題
-* [ダイクストラ法](ex_dijkstra.ipynb)
-* [Union Find Tree](ex_union_find_tree.ipynb)
+* [ダイクストラ法(Notebook)](ex_dijkstra.ipynb)
+* [Union Find Tree(Notebook)](ex_union_find_tree.ipynb)
+* Depth First Search / Breadth First Search
 
 ## Problem pattern
 * X回の操作で、最大で何個にできるでしょうか (ABC140 D)
