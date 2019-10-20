@@ -28,6 +28,7 @@ AtCoder : https://atcoder.jp/
 * [ダイクストラ法(Notebook)](ex_dijkstra.ipynb)
 * [Union Find Tree(Notebook)](ex_union_find_tree.ipynb)
 * Depth First Search / Breadth First Search
+* [二分探索(Notebook)](ex_bisect.ipynb)
 
 ## Problem pattern
 * X回の操作で、最大で何個にできるでしょうか (ABC140 D)
