@@ -17,7 +17,7 @@ AtCoder : https://atcoder.jp/
 * [docs/](docs/README.md)
 
 ## Learned 
-* 尺取り法
+* [尺取り法(Notebook)](notebook/ex_shakutori.ipynb) 
 * 累積和
 * MODでの四則演算
    * 足し算 : 先にしようが後からしようが同じ結果
