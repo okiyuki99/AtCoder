@@ -292,7 +292,8 @@ def nCr(n,r):
 ```
 
 ```py
-# nCr で nがめちゃくちゃでかい数の場合が多いので、以下を使うらしい
+# nCr で nがめちゃくちゃでかい数の場合が多いので、以下を使う。
+# nCr mod mはmodc(n,r,m)で得られる。
 # 参考 : http://nemupm.hatenablog.com/entry/2015/01/03/234840
 def modc(a, b, m):
     c = 1
