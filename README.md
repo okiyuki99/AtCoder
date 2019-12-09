@@ -25,10 +25,12 @@ AtCoder : https://atcoder.jp/
    * 参考 : [modにおける四則演算](https://ttrsq.exblog.jp/24409121/) 
 * 動的計画法（DP）
     * 今の状態が次の状態に影響するような問題
-* [ダイクストラ法(Notebook)](ex_dijkstra.ipynb)
-* [Union Find Tree(Notebook)](ex_union_find_tree.ipynb)
+* [ダイクストラ法(Notebook)](notebook/ex_dijkstra.ipynb)
+* [Union Find Tree(Notebook)](notebook/ex_union_find_tree.ipynb)
 * Depth First Search / Breadth First Search
-* [二分探索(Notebook)](ex_bisect.ipynb)
+* [二分探索(Notebook)](notebook/ex_bisect.ipynb)
+* [bit全探索(Notebook)](notebook/ex_bit_all_search.ipynb) 
+    * [シフト演算子](notebook/ex_bit_full_search.ipynb) 
 
 ## Problem pattern
 * X回の操作で、最大で何個にできるでしょうか (ABC140 D)
